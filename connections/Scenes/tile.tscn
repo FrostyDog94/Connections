@@ -1,4 +1,0 @@
-[gd_scene format=3 uid="uid://dity0u5uy7qwq"]
-
-[node name="Tile" type="Button"]
-custom_minimum_size = Vector2(75, 75)

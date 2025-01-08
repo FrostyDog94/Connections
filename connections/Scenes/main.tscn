@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0rn8cwa7ydvn"]
+[gd_scene load_steps=2 format=3 uid="uid://cnaipyhylk2eb"]
 
-[ext_resource type="PackedScene" uid="uid://ddnjj7rljvnmv" path="res://Scenes/row.tscn" id="1_fo7gn"]
+[ext_resource type="Script" path="res://Scripts/grid_container.gd" id="1_d0pk4"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -10,30 +10,85 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+columns = 4
+script = ExtResource("1_d0pk4")
 
-[node name="Rows" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
-layout_mode = 2
-
-[node name="Row" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_fo7gn")]
+[node name="Tile" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
-[node name="Row2" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_fo7gn")]
+[node name="Tile2" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
-[node name="Row3" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_fo7gn")]
+[node name="Tile3" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
-[node name="Row4" parent="MarginContainer/CenterContainer/Rows" instance=ExtResource("1_fo7gn")]
+[node name="Tile4" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile5" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile6" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile7" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile8" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile9" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile10" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile11" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile12" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile13" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile14" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile15" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Tile16" type="Button" parent="CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
