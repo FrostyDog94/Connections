@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnaipyhylk2eb"]
+[gd_scene load_steps=5 format=3 uid="uid://cnaipyhylk2eb"]
 
 [ext_resource type="Script" path="res://Scripts/grid_container.gd" id="1_d0pk4"]
+[ext_resource type="Script" path="res://Scripts/tile.gd" id="2_yjb5w"]
+
+[sub_resource type="GDScript" id="GDScript_xvclo"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="Theme" id="Theme_hhn3s"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -9,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = SubResource("GDScript_xvclo")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -32,63 +50,144 @@ script = ExtResource("1_d0pk4")
 [node name="Tile" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile2" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile3" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile4" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile5" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile6" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile7" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile8" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile9" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile10" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile11" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile12" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile13" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile14" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile15" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
 
 [node name="Tile16" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
+theme = SubResource("Theme_hhn3s")
+toggle_mode = true
+keep_pressed_outside = true
+script = ExtResource("2_yjb5w")
+
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile2" to="CenterContainer/GridContainer/Tile2" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile3" to="CenterContainer/GridContainer/Tile3" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile4" to="CenterContainer/GridContainer/Tile4" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile5" to="CenterContainer/GridContainer/Tile5" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile6" to="CenterContainer/GridContainer/Tile6" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile7" to="CenterContainer/GridContainer/Tile7" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile8" to="CenterContainer/GridContainer/Tile8" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile9" to="CenterContainer/GridContainer/Tile9" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile10" to="CenterContainer/GridContainer/Tile10" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile11" to="CenterContainer/GridContainer/Tile11" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile12" to="CenterContainer/GridContainer/Tile12" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile13" to="CenterContainer/GridContainer/Tile13" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile14" to="CenterContainer/GridContainer/Tile14" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile15" to="CenterContainer/GridContainer/Tile15" method="_on_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Tile16" to="CenterContainer/GridContainer/Tile16" method="_on_pressed"]

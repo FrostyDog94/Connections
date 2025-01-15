@@ -1,16 +1,17 @@
 extends GridContainer
-var x = randi_range(0, 3)
-var y = randi_range(0, 3)
-
+var z = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Global.list.shuffle()
+	
 	for n in self.get_children():
-		n.text = Global.list[x][y]
+		n.text = Global.list[z].word
 		
-		x = randi_range(0, 3)
-		y = randi_range(0, 3)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+		z += 1
 func _process(delta: float) -> void:
-	pass
+	if Global.buttons_pressed == 4:
+		for n in self.get_children():
+			n.button_pressed = false;
+		Global.buttons_pressed = 0	
+		
