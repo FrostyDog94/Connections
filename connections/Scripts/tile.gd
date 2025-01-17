@@ -2,6 +2,7 @@ extends Button
 
 var new_tile : tile
 
+
 func _on_button_down() -> void:
 	Global.selected.sort()
 	if button_pressed == false:

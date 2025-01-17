@@ -1,5 +1,6 @@
 extends GridContainer
 var z = 0
+var score : int = -1
 var victory : bool
 
 # Called when the node enters the scene tree for the first time.
@@ -25,13 +26,16 @@ func _check_selected():
 			else:
 				victory = true		
 	if victory == true:
+		score += 1
 		for n in self.get_children():
 			if n.button_pressed == true:
 				n.toggle_mode = false
-				self.move_child(n, 0)
-				
+				self.move_child(n, score * 4)
+		
 	print(victory)
-			
+	
+	if score >= 3:
+		print("You win!")		
 
 #Submit button
 func _on_button_pressed() -> void:
