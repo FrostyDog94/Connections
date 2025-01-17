@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnaipyhylk2eb"]
+[gd_scene load_steps=6 format=3 uid="uid://cnaipyhylk2eb"]
 
 [ext_resource type="Script" path="res://Scripts/grid_container.gd" id="1_d0pk4"]
 [ext_resource type="Script" path="res://Scripts/tile.gd" id="2_yjb5w"]
@@ -17,7 +17,11 @@ func _process(delta: float) -> void:
 	pass
 "
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8516f"]
+bg_color = Color(0.246501, 0.706046, 0.34013, 1)
+
 [sub_resource type="Theme" id="Theme_hhn3s"]
+ColorPicker/styles/tab_selected = SubResource("StyleBoxFlat_8516f")
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -175,19 +179,50 @@ toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
 
+[node name="Submit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -123.0
+offset_right = 70.0
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "SUBMIT"
+
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile2" to="CenterContainer/GridContainer/Tile2" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile2" to="CenterContainer/GridContainer/Tile2" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile3" to="CenterContainer/GridContainer/Tile3" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile3" to="CenterContainer/GridContainer/Tile3" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile4" to="CenterContainer/GridContainer/Tile4" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile4" to="CenterContainer/GridContainer/Tile4" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile5" to="CenterContainer/GridContainer/Tile5" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile5" to="CenterContainer/GridContainer/Tile5" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile6" to="CenterContainer/GridContainer/Tile6" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile6" to="CenterContainer/GridContainer/Tile6" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile7" to="CenterContainer/GridContainer/Tile7" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile7" to="CenterContainer/GridContainer/Tile7" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile8" to="CenterContainer/GridContainer/Tile8" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile8" to="CenterContainer/GridContainer/Tile8" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile9" to="CenterContainer/GridContainer/Tile9" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile9" to="CenterContainer/GridContainer/Tile9" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile10" to="CenterContainer/GridContainer/Tile10" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile10" to="CenterContainer/GridContainer/Tile10" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile11" to="CenterContainer/GridContainer/Tile11" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile11" to="CenterContainer/GridContainer/Tile11" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile12" to="CenterContainer/GridContainer/Tile12" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile12" to="CenterContainer/GridContainer/Tile12" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile13" to="CenterContainer/GridContainer/Tile13" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile13" to="CenterContainer/GridContainer/Tile13" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile14" to="CenterContainer/GridContainer/Tile14" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile14" to="CenterContainer/GridContainer/Tile14" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile15" to="CenterContainer/GridContainer/Tile15" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile15" to="CenterContainer/GridContainer/Tile15" method="_on_pressed"]
-[connection signal="pressed" from="CenterContainer/GridContainer/Tile16" to="CenterContainer/GridContainer/Tile16" method="_on_pressed"]
+[connection signal="button_down" from="CenterContainer/GridContainer/Tile16" to="CenterContainer/GridContainer/Tile16" method="_on_button_down"]
+[connection signal="pressed" from="Submit" to="CenterContainer/GridContainer" method="_on_button_pressed"]

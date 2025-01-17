@@ -8,3 +8,5 @@ var list = [
 	tile.new("Honda", "Cars"), tile.new("Ford", "Cars"), tile.new("Mustang", "Cars"), tile.new("Nissan", "Cars"),
 	tile.new("Dog", "Animal"), tile.new("Cat", "Animal"), tile.new("Bat", "Animal"), tile.new("Owl", "Animal")
 ]
+
+var selected : Array
