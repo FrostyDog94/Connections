@@ -27,7 +27,9 @@ func _check_selected():
 	if victory == true:
 		for n in self.get_children():
 			if n.button_pressed == true:
-				n.text = ""
+				n.toggle_mode = false
+				self.move_child(n, 0)
+				
 	print(victory)
 			
 
