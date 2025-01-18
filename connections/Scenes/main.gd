@@ -19,6 +19,7 @@ func _check_selected():
 	for item in Global.selected:
 			if item != Global.selected.front():
 				victory = false
+				Global.tries -= 1
 				break
 			else:
 				victory = true		
@@ -33,7 +34,12 @@ func _check_selected():
 	print(victory)
 	
 	if score >= 3:
-		print("You win!")		
+		$UIText.text = "You win!"
+	
+	if Global.tries <= 0:
+		$UIText.text = "You lose."
+		for n in $CenterContainer/GridContainer.get_children():
+			n.disabled = true
 
 #Submit button
 func _on_submit_pressed() -> void:
@@ -44,7 +50,7 @@ func _on_submit_pressed() -> void:
 		Global.buttons_pressed = 0	
 		Global.selected.clear()
 
-
+#Clear
 func _on_clear_pressed() -> void:
 	Global.buttons_pressed = 0	
 	Global.selected.clear()

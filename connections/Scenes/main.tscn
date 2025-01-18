@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cnaipyhylk2eb"]
+[gd_scene load_steps=9 format=3 uid="uid://cnaipyhylk2eb"]
 
 [ext_resource type="Texture2D" uid="uid://ifxsmf0drvcq" path="res://Texture/New Piskel.png" id="1_b7y18"]
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_jk0fl"]
 [ext_resource type="Theme" uid="uid://w0bhrajomgba" path="res://Themes/Tile.tres" id="2_7ery7"]
 [ext_resource type="Script" path="res://Scripts/tile.gd" id="2_yjb5w"]
+[ext_resource type="Script" path="res://Scenes/tries_text.gd" id="3_er8uj"]
 [ext_resource type="Theme" uid="uid://brqmkudn1t7be" path="res://Themes/UI_Buttons.tres" id="5_3ur0e"]
 [ext_resource type="Theme" uid="uid://c30yekp5to2fj" path="res://Themes/Category.tres" id="6_8ylnv"]
 [ext_resource type="Script" path="res://Scenes/category_text.gd" id="7_rnp2j"]
@@ -21,6 +22,55 @@ script = ExtResource("1_jk0fl")
 position = Vector2(586, 330.5)
 scale = Vector2(37.625, 21.6562)
 texture = ExtResource("1_b7y18")
+
+[node name="UIText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -103.5
+offset_top = 127.0
+offset_right = 103.5
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Create four groups of four!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tries" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -158.0
+offset_right = 44.0
+offset_bottom = -135.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Tries left:"
+vertical_alignment = 1
+
+[node name="Tries_text" type="Label" parent="Tries"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 31.0
+offset_top = -23.0
+offset_right = 43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "4"
+vertical_alignment = 1
+script = ExtResource("3_er8uj")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1

@@ -2,6 +2,8 @@ extends Node
 
 var buttons_pressed = 0
 
+var tries = 4
+
 var list = [
 	tile.new("Andrew", "Brother"), tile.new("Aidan", "Brother"), tile.new("Colin", "Brother"), tile.new("Luke", "Brother"),
 	tile.new("Blue", "Color"), tile.new("Red", "Color"), tile.new("Purple", "Color"), tile.new("Green", "Color"),

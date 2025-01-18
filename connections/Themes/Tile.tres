@@ -3,8 +3,9 @@
 [ext_resource type="FontFile" uid="uid://bra167df2eldx" path="res://Fonts/Mollen-BoldPersonalUse.otf" id="1_uqo11"]
 [ext_resource type="Texture2D" uid="uid://pyvg4bysdhsc" path="res://Texture/button.png" id="2_m3jxv"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igsyb"]
-bg_color = Color(0.313726, 0.960784, 0.419608, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ype0y"]
+texture = ExtResource("2_m3jxv")
+modulate_color = Color(0.937255, 0.937255, 0.901961, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h4f1"]
 content_margin_left = 4.0
@@ -41,7 +42,7 @@ modulate_color = Color(0.352941, 0.34902, 0.305882, 1)
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -59,7 +60,7 @@ Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 12
 Button/fonts/font = ExtResource("1_uqo11")
-Button/styles/disabled = SubResource("StyleBoxFlat_igsyb")
+Button/styles/disabled = SubResource("StyleBoxTexture_ype0y")
 Button/styles/focus = SubResource("StyleBoxFlat_5h4f1")
 Button/styles/hover = SubResource("StyleBoxTexture_syiyo")
 Button/styles/normal = SubResource("StyleBoxTexture_lc402")
