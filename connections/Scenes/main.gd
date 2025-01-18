@@ -1,4 +1,4 @@
-extends GridContainer
+extends Control
 var z = 0
 var score : int = -1
 var victory : bool
@@ -8,7 +8,7 @@ var complete_theme = load("res://Themes/Tile_complete.tres")
 func _ready() -> void:
 	Global.list.shuffle()
 	
-	for n in self.get_children():
+	for n in $CenterContainer/GridContainer.get_children():
 		n.new_tile = Global.list[z]
 		n.text = Global.list[z].word.to_upper()
 		
@@ -28,23 +28,22 @@ func _check_selected():
 				victory = true		
 	if victory == true:
 		score += 1
-		for n in self.get_children():
+		for n in $CenterContainer/GridContainer.get_children():
 			if n.button_pressed == true:
 				n.toggle_mode = false
-				self.move_child(n, score * 4)
-				$Categories.get_child(score).text = "Woah!"
+				$CenterContainer/GridContainer.move_child(n, score * 4)
 				n.set_theme(complete_theme)
-		
+		$Categories.get_child(score).text = Global.selected.front()
 	print(victory)
 	
 	if score >= 3:
 		print("You win!")		
 
 #Submit button
-func _on_button_pressed() -> void:
+func _on_submit_pressed() -> void:
 	if Global.buttons_pressed >= 4:
 		_check_selected()
-		for n in self.get_children():
+		for n in $CenterContainer/GridContainer.get_children():
 			n.button_pressed = false
 		Global.buttons_pressed = 0	
 		Global.selected.clear()

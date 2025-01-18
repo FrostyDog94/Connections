@@ -1,27 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnaipyhylk2eb"]
+[gd_scene load_steps=8 format=3 uid="uid://cnaipyhylk2eb"]
 
-[ext_resource type="Script" path="res://Scripts/grid_container.gd" id="1_d0pk4"]
+[ext_resource type="Texture2D" uid="uid://ifxsmf0drvcq" path="res://Texture/New Piskel.png" id="1_b7y18"]
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_jk0fl"]
+[ext_resource type="Theme" uid="uid://w0bhrajomgba" path="res://Themes/Tile.tres" id="2_7ery7"]
 [ext_resource type="Script" path="res://Scripts/tile.gd" id="2_yjb5w"]
-
-[sub_resource type="GDScript" id="GDScript_xvclo"]
-script/source = "extends Control
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8516f"]
-bg_color = Color(0.246501, 0.706046, 0.34013, 1)
-
-[sub_resource type="Theme" id="Theme_hhn3s"]
-ColorPicker/styles/tab_selected = SubResource("StyleBoxFlat_8516f")
+[ext_resource type="Theme" uid="uid://brqmkudn1t7be" path="res://Themes/UI_Buttons.tres" id="5_3ur0e"]
+[ext_resource type="Theme" uid="uid://c30yekp5to2fj" path="res://Themes/Category.tres" id="6_8ylnv"]
+[ext_resource type="Script" path="res://Scenes/category_text.gd" id="7_rnp2j"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -30,7 +15,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_xvclo")
+script = ExtResource("1_jk0fl")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(586, 330.5)
+scale = Vector2(37.625, 21.6562)
+texture = ExtResource("1_b7y18")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -49,20 +39,20 @@ grow_vertical = 2
 [node name="GridContainer" type="GridContainer" parent="CenterContainer"]
 layout_mode = 2
 columns = 4
-script = ExtResource("1_d0pk4")
 
 [node name="Tile" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
+text = "HELLO"
 script = ExtResource("2_yjb5w")
 
 [node name="Tile2" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -70,7 +60,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile3" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -78,7 +68,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile4" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -86,7 +76,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile5" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -94,7 +84,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile6" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -102,7 +92,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile7" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -110,7 +100,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile8" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -118,7 +108,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile9" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -126,7 +116,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile10" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -134,7 +124,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile11" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -142,7 +132,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile12" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -150,7 +140,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile13" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -158,7 +148,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile14" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -166,7 +156,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile15" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -174,7 +164,7 @@ script = ExtResource("2_yjb5w")
 [node name="Tile16" type="Button" parent="CenterContainer/GridContainer"]
 custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
-theme = SubResource("Theme_hhn3s")
+theme = ExtResource("2_7ery7")
 toggle_mode = true
 keep_pressed_outside = true
 script = ExtResource("2_yjb5w")
@@ -192,7 +182,53 @@ offset_right = 70.0
 offset_bottom = -64.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = ExtResource("5_3ur0e")
 text = "SUBMIT"
+
+[node name="Categories" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Cat1" type="Label" parent="Categories"]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 193.0
+offset_right = 393.0
+offset_bottom = 216.0
+theme = ExtResource("6_8ylnv")
+text = "HELLO"
+script = ExtResource("7_rnp2j")
+
+[node name="Cat2" type="Label" parent="Categories"]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 272.0
+offset_right = 393.0
+offset_bottom = 295.0
+theme = ExtResource("6_8ylnv")
+text = "HELLO"
+script = ExtResource("7_rnp2j")
+
+[node name="Cat3" type="Label" parent="Categories"]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 350.0
+offset_right = 393.0
+offset_bottom = 373.0
+theme = ExtResource("6_8ylnv")
+text = "HELLO"
+script = ExtResource("7_rnp2j")
+
+[node name="Cat4" type="Label" parent="Categories"]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 433.0
+offset_right = 393.0
+offset_bottom = 456.0
+theme = ExtResource("6_8ylnv")
+text = "HELLO"
+script = ExtResource("7_rnp2j")
 
 [connection signal="button_down" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_pressed"]
@@ -225,4 +261,4 @@ text = "SUBMIT"
 [connection signal="button_down" from="CenterContainer/GridContainer/Tile15" to="CenterContainer/GridContainer/Tile15" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile15" to="CenterContainer/GridContainer/Tile15" method="_on_pressed"]
 [connection signal="button_down" from="CenterContainer/GridContainer/Tile16" to="CenterContainer/GridContainer/Tile16" method="_on_button_down"]
-[connection signal="pressed" from="Submit" to="CenterContainer/GridContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="Submit" to="." method="_on_submit_pressed"]
