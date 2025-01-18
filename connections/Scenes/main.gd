@@ -15,10 +15,6 @@ func _ready() -> void:
 		z += 1
 		
 		
-func _process(delta: float) -> void:
-	pass
-		
-		
 func _check_selected():
 	for item in Global.selected:
 			if item != Global.selected.front():
@@ -33,7 +29,7 @@ func _check_selected():
 				n.toggle_mode = false
 				$CenterContainer/GridContainer.move_child(n, score * 4)
 				n.set_theme(complete_theme)
-		$Categories.get_child(score).text = Global.selected.front()
+		$Categories.get_child(score).text = Global.selected.front().to_upper()
 	print(victory)
 	
 	if score >= 3:
@@ -47,3 +43,12 @@ func _on_submit_pressed() -> void:
 			n.button_pressed = false
 		Global.buttons_pressed = 0	
 		Global.selected.clear()
+
+
+func _on_clear_pressed() -> void:
+	Global.buttons_pressed = 0	
+	Global.selected.clear()
+	print(Global.buttons_pressed)
+	print(Global.selected)
+	for n in $CenterContainer/GridContainer.get_children():
+			n.button_pressed = false
