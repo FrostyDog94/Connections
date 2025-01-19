@@ -3,6 +3,9 @@ extends Button
 var new_tile : tile
 
 var gs = Global.selected
+
+func _ready() -> void:
+	self.autowrap_mode = TextServer.AUTOWRAP_WORD
 	
 func _on_button_down() -> void:
 	gs.sort()

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b15h5kxt4jfyg"
+
+[deps]
+
+files=["res://Files/Biology Connections Terms.category.translation", "res://Files/Biology Connections Terms.character 1.translation", "res://Files/Biology Connections Terms.character 2.translation", "res://Files/Biology Connections Terms.character 3.translation", "res://Files/Biology Connections Terms.character 4.translation"]
+
+source_file="res://Files/Biology Connections Terms.csv"
+dest_files=["res://Files/Biology Connections Terms.category.translation", "res://Files/Biology Connections Terms.character 1.translation", "res://Files/Biology Connections Terms.character 2.translation", "res://Files/Biology Connections Terms.character 3.translation", "res://Files/Biology Connections Terms.character 4.translation"]
+
+[params]
+
+compress=true
+delimiter=0

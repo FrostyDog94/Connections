@@ -6,14 +6,15 @@ var complete_theme = load("res://Themes/Tile_complete.tres")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Global.list.shuffle()
+	Global.new_list.shuffle()
 	
 	for n in $CenterContainer/GridContainer.get_children():
-		n.new_tile = Global.list[z]
-		n.text = Global.list[z].word.to_upper()
+		n.new_tile = Global.new_list[z]
+		n.get_child(0).text = Global.new_list[z].word.to_upper()
 		
 		z += 1
-		
+	
+	
 		
 func _check_selected():
 	for item in Global.selected:
@@ -37,9 +38,10 @@ func _check_selected():
 		$UIText.text = "You win!"
 	
 	if Global.tries <= 0:
-		$UIText.text = "You lose."
+		$UIText.text = "Next time!"
 		for n in $CenterContainer/GridContainer.get_children():
 			n.disabled = true
+			
 
 #Submit button
 func _on_submit_pressed() -> void:
