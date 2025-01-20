@@ -1,5 +1,5 @@
 extends Control
-var z = 1
+var z = 0
 var score : int = -1
 var victory : bool
 var complete_theme = load("res://Themes/Tile_complete.tres")

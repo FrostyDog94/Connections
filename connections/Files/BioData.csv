@@ -1,4 +1,4 @@
-﻿Game,category,character 1,character 2,character 3,character 4
+﻿"General ""game""",category,character 1,character 2,character 3,character 4
 skull 1,"cranial 
 sutures",lambdoid,saggital,squamosal,coronal
 skull 1,"temporal 
@@ -30,3 +30,7 @@ superior appendicular skeleton,humerus,olecranon fossa,greater tubercle,coronoid
 superior appendicular skeleton,ulna,olecranon process,styloid process,trochlear notch,coronoid process
 superior appendicular skeleton,scapula,glenoid fossa,spine,acromion process,coracoid process
 superior appendicular skeleton,wrist/hand,carpals,metacarpal,proximal phalange,distal phalange
+Test,Arcane Characters,Jinx,Kaitlynn,V,Jace
+Test,Colors,Blue,Green,Purple,Red
+Test,Planets,Mars,Earth,Jupiter,Pluto
+Test,Monsters,Frankenstein,Dracula,Wolfman,Mummy

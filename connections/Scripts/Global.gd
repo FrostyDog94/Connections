@@ -15,46 +15,31 @@ var new_list = []
 
 var selected : Array
 
-var file = FileAccess.open("res://Files/BioData.csv", FileAccess.READ)
-
 var content
 
 var game_list = []
 
-var game = "skull 1"
+#var game = "skull 1"
 
 func _ready() -> void:
-	_create_game_list()
-	new_list.clear()
-	while !file.eof_reached():
-		content = file.get_csv_line()	
-		if content[0] == game:
-			new_list.append(tile.new(content[2], content[1]))
-			new_list.append(tile.new(content[3], content[1]))
-			new_list.append(tile.new(content[4], content[1]))
-			new_list.append(tile.new(content[5], content[1]))
-	print(new_list)
+	_create_game("skull 1")
+	
+	
+func _create_game(game):
+	var file = FileAccess.open("res://Files/BioData.csv", FileAccess.READ)
 	print(game)
-	print(content[0])
-	
-	
-func _create_game():
 	new_list.clear()
-	while !file.eof_reached():
-		content = file.get_csv_line()	
-		if content[0] == game:
-			new_list.append(tile.new(content[2], content[1]))
-			new_list.append(tile.new(content[3], content[1]))
-			new_list.append(tile.new(content[4], content[1]))
-			new_list.append(tile.new(content[5], content[1]))
-	print(new_list)
-	print(game)
-	
-	
-func _create_game_list():
 	while !file.eof_reached():
 		content = file.get_csv_line()
+		if content[0] == game:
+			new_list.append(tile.new(content[2], content[1]))
+			new_list.append(tile.new(content[3], content[1]))
+			new_list.append(tile.new(content[4], content[1]))
+			new_list.append(tile.new(content[5], content[1]))
 		if !game_list.has(content[0]):
 			game_list.append(content[0])
-	print(game_list)
+	file.close()
+	print(new_list[0].word)
+	
+
 	
