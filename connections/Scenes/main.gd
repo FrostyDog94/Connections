@@ -1,8 +1,9 @@
 extends Control
-var z = 0
+var z = 1
 var score : int = -1
 var victory : bool
 var complete_theme = load("res://Themes/Tile_complete.tres")
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,7 +14,6 @@ func _ready() -> void:
 		n.get_child(0).text = Global.new_list[z].word.to_upper()
 		
 		z += 1
-	
 	
 		
 func _check_selected():
@@ -56,7 +56,7 @@ func _on_submit_pressed() -> void:
 func _on_clear_pressed() -> void:
 	Global.buttons_pressed = 0	
 	Global.selected.clear()
-	print(Global.buttons_pressed)
-	print(Global.selected)
+	#print(Global.buttons_pressed)
+	#print(Global.selected)
 	for n in $CenterContainer/GridContainer.get_children():
 			n.button_pressed = false

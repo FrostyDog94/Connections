@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://y4hqor0tses"
+
+[deps]
+
+files=["res://Files/BioData.category.translation", "res://Files/BioData.character 1.translation", "res://Files/BioData.character 2.translation", "res://Files/BioData.character 3.translation", "res://Files/BioData.character 4.translation"]
+
+source_file="res://Files/BioData.csv"
+dest_files=["res://Files/BioData.category.translation", "res://Files/BioData.character 1.translation", "res://Files/BioData.character 2.translation", "res://Files/BioData.character 3.translation", "res://Files/BioData.character 4.translation"]
+
+[params]
+
+compress=true
+delimiter=0

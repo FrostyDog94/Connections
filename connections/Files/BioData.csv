@@ -1,4 +1,4 @@
-﻿"General ""game""",category,character 1,character 2,character 3,character 4
+﻿Game,category,character 1,character 2,character 3,character 4
 skull 1,"cranial 
 sutures",lambdoid,saggital,squamosal,coronal
 skull 1,"temporal 
@@ -10,57 +10,23 @@ process"
 skull 1,foramen,jugular,mental,optic,infraorbital
 skull 1,"bones of 
 cranium",frontal,temporal,occipital,parietal
-,,,,,
 skull 2,ethmoid bone,perpendicular plate,crista galli,cribriform plate,superior nasal conchae
 skull 2,processes,temporal,zygomatic,palatine,styloid
 skull 2,sphenoid bone,greater wings,sella turcica,hypophyseal fossa,pterygoid process
 skull 2,temporal bone 2,mastoid portion,external auditory meatus,carotid foramen,squamous portion
-,,,,,
 skull 3,structures in nasal cavity,vomer,inferior nasal conchae,perpendicular plate,middle nasal conchae
 skull 3,inferior cranial structures,occipital condyles,palantine process ,mandibular fossa,foramen magnum
 skull 3,structures inside cranial cavity,sella turcica,petrous portion,cribriform plate,lesser wings
 skull 3,bones of face,zygomatic,maxilla,mandible,nasal
-,,,,,
 skeleton complete 1,composite structures,nasal septum,zygomatic arch,hard palate,os coxa
 skeleton complete 1,bones of leg,tibia,patella,fibula,femur
 skeleton complete 1,bones of arm,humerus,radius,ulna ,carpals
 skeleton complete 1,girdle bones,scapula,clavicle,ischium,ilium
-,,,,,
 axial skeleton,vertebrae parts,vertebral foramen,spinous process,superior articular facet,transverse process
 axial skeleton,bones of spinal column,cervical,thoracic,lumbar,saccrum
 axial skeleton,foramen,intervertebral,foramen magnum,jugular,infraorbital 
 axial skeleton,parts of rib cage/sternum,manubrium,xiphoid process,floating ribs,false ribs
-,,,,,
 superior appendicular skeleton,humerus,olecranon fossa,greater tubercle,coronoid fossa,trochlea
 superior appendicular skeleton,ulna,olecranon process,styloid process,trochlear notch,coronoid process
 superior appendicular skeleton,scapula,glenoid fossa,spine,acromion process,coracoid process
 superior appendicular skeleton,wrist/hand,carpals,metacarpal,proximal phalange,distal phalange
-,,,,,
-Inferior appendicular skeleton,femur,greater trochanter,linea aspera,medial epicondyle,lesser trochanter
-Inferior appendicular skeleton,ankle/foot,calcaneus,talus,metatarsal,distal phanlange
-Inferior appendicular skeleton,os coxa,acetabulum,obturator foramen,sacroiliac joint,pubic symphysis
-Inferior appendicular skeleton,,,,,
-,,,,,
-,,,,,
-,,,,,
-Joints,examples of synarthroses,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-Muscles 1,muscles of head,orbicularis oris,temporalis,occipitalis,masseter
-Muscles 1,abdomen,transversus abdominis,rectus abdominis,external oblique,internal oblique
-Muscles 1,back,trapezius,latissimus dorsi,rhomboid major,erector spinae
-Muscles 1,shoulder,teres minor,infraspinatus,subscapularis,supraspinatus
-,,,,,
-Muscles 2,upper arm,triceps brachii long head,brachialis,biceps brachii,triceps brachii medial head
-Muscles 2,forearm,flexor carpi radialis,palmaris longus,extensor carpi ulnaris,extensor digitorum
-Muscles 2,butt,gluteus maximus,gluteus medius,gluteus minimus,piriformis
-Muscles 2,femoral region,sartorius,pectineus,rectus femoris,vastus lateralis
-Muscles 2,,,,,
-Muscles 2,,,,,
-,,,,,
-,,,,,
-Advanced,muscles attached to scapula,,,,
-,superficial muscles of …,,,,
-,muscles of quadriceps,,,,
