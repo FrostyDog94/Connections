@@ -60,3 +60,7 @@ func _on_clear_pressed() -> void:
 	#print(Global.selected)
 	for n in $CenterContainer/GridContainer.get_children():
 			n.button_pressed = false
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")

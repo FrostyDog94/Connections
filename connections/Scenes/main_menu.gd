@@ -7,7 +7,7 @@ var button
 func _ready() -> void:
 	button = preload("res://Objects/game_option.tscn")
 	
-	for i in range(Global.game_list.size()):
+	for i in range(Global.game_list.size() - 2):
 		$CenterContainer/GridContainer.add_child(button.instantiate())
 		
 	for n in $CenterContainer/GridContainer.get_children():
