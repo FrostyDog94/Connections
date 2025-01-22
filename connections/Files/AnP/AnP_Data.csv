@@ -1,15 +1,8 @@
 ﻿"General ""game""",category,character 1,character 2,character 3,character 4
-skull 1,"cranial 
-sutures",lambdoid,saggital,squamosal,coronal
-skull 1,"temporal 
-bone 1","petrous 
-portion","mandibular 
-fossa","mastoid 
-process","zygomatic 
-process"
+skull 1,cranial sutures,lambdoid,saggital,squamosal,coronal
+skull 1,temporal bone 1,petrous portion,mandibular fossa,mastoid process,zygomatic process
 skull 1,foramen,jugular,mental,optic,infraorbital
-skull 1,"bones of 
-cranium",frontal,temporal,occipital,parietal
+skull 1,bones of cranium,frontal,temporal,occipital,parietal
 skull 2,ethmoid bone,perpendicular plate,crista galli,cribriform plate,superior nasal conchae
 skull 2,processes,temporal,zygomatic,palatine,styloid
 skull 2,sphenoid bone,greater wings,sella turcica,hypophyseal fossa,pterygoid process
@@ -30,7 +23,11 @@ superior appendicular skeleton,humerus,olecranon fossa,greater tubercle,coronoid
 superior appendicular skeleton,ulna,olecranon process,styloid process,trochlear notch,coronoid process
 superior appendicular skeleton,scapula,glenoid fossa,spine,acromion process,coracoid process
 superior appendicular skeleton,wrist/hand,carpals,metacarpal,proximal phalange,distal phalange
-Test,Arcane Characters,Jinx,Kaitlynn,V,Jace
-Test,Colors,Blue,Green,Purple,Red
-Test,Planets,Mars,Earth,Jupiter,Pluto
-Test,Monsters,Frankenstein,Dracula,Wolfman,Mummy
+Muscles 1,muscles of head,orbicularis oris,temporalis,occipitalis,masseter
+Muscles 1,abdomen,transversus abdominis,rectus abdominis,external oblique,internal oblique
+Muscles 1,back,trapezius,latissimus dorsi,rhomboid major,erector spinae
+Muscles 1,shoulder,teres minor,infraspinatus,subscapularis,supraspinatus
+Muscles 2,upper arm,triceps brachii long head,brachialis,biceps brachii,triceps brachii medial head
+Muscles 2,forearm,flexor carpi radialis,palmaris longus,extensor carpi ulnaris,extensor digitorum
+Muscles 2,butt,gluteus maximus,gluteus medius,gluteus minimus,piriformis
+Muscles 2,femoral region,sartorius,pectineus,rectus femoris,vastus lateralis

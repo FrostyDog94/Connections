@@ -8,7 +8,6 @@ var complete_theme = load("res://Themes/Tile_complete.tres")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.new_list.shuffle()
-	
 	for n in $CenterContainer/GridContainer.get_children():
 		n.new_tile = Global.new_list[z]
 		n.get_child(0).text = Global.new_list[z].word.to_upper()

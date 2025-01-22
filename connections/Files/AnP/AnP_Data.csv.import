@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://70nw0ghpx8fj"
+
+[deps]
+
+files=["res://Files/AnP/AnP_Data.category.translation", "res://Files/AnP/AnP_Data.character 1.translation", "res://Files/AnP/AnP_Data.character 2.translation", "res://Files/AnP/AnP_Data.character 3.translation", "res://Files/AnP/AnP_Data.character 4.translation"]
+
+source_file="res://Files/AnP/AnP_Data.csv"
+dest_files=["res://Files/AnP/AnP_Data.category.translation", "res://Files/AnP/AnP_Data.character 1.translation", "res://Files/AnP/AnP_Data.character 2.translation", "res://Files/AnP/AnP_Data.character 3.translation", "res://Files/AnP/AnP_Data.character 4.translation"]
+
+[params]
+
+compress=true
+delimiter=0

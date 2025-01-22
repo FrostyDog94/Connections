@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://cnaipyhylk2eb"]
 
 [ext_resource type="Texture2D" uid="uid://ifxsmf0drvcq" path="res://Texture/New Piskel.png" id="1_b7y18"]
-[ext_resource type="Script" path="res://Scenes/main.gd" id="1_jk0fl"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_jk0fl"]
 [ext_resource type="Theme" uid="uid://w0bhrajomgba" path="res://Themes/Tile.tres" id="2_7ery7"]
 [ext_resource type="Script" path="res://Scripts/tile.gd" id="2_yjb5w"]
-[ext_resource type="Script" path="res://Scenes/tries_text.gd" id="3_er8uj"]
+[ext_resource type="Script" path="res://Scripts/tries_text.gd" id="3_er8uj"]
 [ext_resource type="Theme" uid="uid://brqmkudn1t7be" path="res://Themes/UI_Buttons.tres" id="5_3ur0e"]
 [ext_resource type="Theme" uid="uid://c30yekp5to2fj" path="res://Themes/Category.tres" id="6_8ylnv"]
 [ext_resource type="Theme" uid="uid://vc1wl542y1y0" path="res://Themes/Tile_Label.tres" id="6_ahu1c"]
-[ext_resource type="Script" path="res://Scenes/category_text.gd" id="7_rnp2j"]
+[ext_resource type="Script" path="res://Scripts/category_text.gd" id="7_rnp2j"]
 
 [node name="Main" type="Control"]
 layout_mode = 3

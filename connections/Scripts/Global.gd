@@ -19,15 +19,20 @@ var content
 
 var game_list = []
 
+var file 
+
+var file_path = "res://Files/AnP/AnP_Data.csv"
+
 #var game = "skull 1"
 
 func _ready() -> void:
+	file = FileAccess.open("res://Files/AnP/AnP_Data.csv", FileAccess.READ)
 	_create_game("skull 1")
 	
 	
 func _create_game(game):
-	var file = FileAccess.open("res://Files/BioData.csv", FileAccess.READ)
-	print(game)
+	file = FileAccess.open(file_path, FileAccess.READ)
+	game_list.clear()
 	new_list.clear()
 	while !file.eof_reached():
 		content = file.get_csv_line()
@@ -39,7 +44,17 @@ func _create_game(game):
 		if !game_list.has(content[0]):
 			game_list.append(content[0])
 	file.close()
-	print(new_list[0].word)
+	
+	
+func _create_game_list(filex):
+	file = FileAccess.open(filex, FileAccess.READ)
+	game_list.clear()
+	
+	while !file.eof_reached():
+		content = file.get_csv_line()
+		if !game_list.has(content[0]):
+			game_list.append(content[0])
+	file.close()
 	
 
 	

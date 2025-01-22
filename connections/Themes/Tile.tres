@@ -5,6 +5,7 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ype0y"]
 texture = ExtResource("2_m3jxv")
+region_rect = Rect2(0, 0, 50, 50)
 modulate_color = Color(0.937255, 0.937255, 0.901961, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h4f1"]
