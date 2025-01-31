@@ -1,17 +1,3 @@
 [remap]
 
-importer="csv_translation"
-type="Translation"
-uid="uid://du3plohx3qu7x"
-
-[deps]
-
-files=["res://Files/Herp/Herp_Data.category.translation", "res://Files/Herp/Herp_Data.character 1.translation", "res://Files/Herp/Herp_Data.character 2.translation", "res://Files/Herp/Herp_Data.character 3.translation", "res://Files/Herp/Herp_Data.character 4.translation"]
-
-source_file="res://Files/Herp/Herp_Data.csv"
-dest_files=["res://Files/Herp/Herp_Data.category.translation", "res://Files/Herp/Herp_Data.character 1.translation", "res://Files/Herp/Herp_Data.character 2.translation", "res://Files/Herp/Herp_Data.character 3.translation", "res://Files/Herp/Herp_Data.character 4.translation"]
-
-[params]
-
-compress=true
-delimiter=0
+importer="keep"

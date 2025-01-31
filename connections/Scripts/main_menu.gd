@@ -53,3 +53,7 @@ func _on_herp_button_pressed() -> void:
 	_select_game_type("res://Files/Herp/Herp_Data.csv")
 	Global._create_game_list("res://Files/Herp/Herp_Data.csv")
 	_create_list()
+
+
+func _on_quit_button_pressed() -> void:
+	get_tree().quit()
