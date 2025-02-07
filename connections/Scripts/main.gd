@@ -13,6 +13,7 @@ func _ready() -> void:
 		n.get_child(0).text = Global.new_list[z].word.to_upper()
 		
 		z += 1
+		
 	
 		
 func _check_selected():
@@ -31,6 +32,7 @@ func _check_selected():
 				$CenterContainer/GridContainer.move_child(n, score * 4)
 				n.set_theme(complete_theme)
 		$Categories.get_child(score).text = Global.selected.front().to_upper()
+		_display_image()
 	print(victory)
 	
 	if score >= 3:
@@ -63,3 +65,13 @@ func _on_clear_pressed() -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+	
+
+func _display_image():
+	print("Cat = " + $Categories.get_child(score).text.to_lower())
+	$CorrectImage.visible = true
+	$CorrectImage.texture = load("res://Images/" + $Categories.get_child(score).text.to_lower() + ".png")
+
+
+func _on_button_pressed() -> void:
+	$CorrectImage.visible = false
