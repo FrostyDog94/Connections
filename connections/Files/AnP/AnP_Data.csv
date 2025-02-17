@@ -23,11 +23,27 @@ superior appendicular skeleton,humerus,olecranon fossa,greater tubercle,coronoid
 superior appendicular skeleton,ulna,olecranon process,styloid process,trochlear notch,coronoid process
 superior appendicular skeleton,scapula,glenoid fossa,spine,acromion process,coracoid process
 superior appendicular skeleton,wrist/hand,carpals,metacarpal,proximal phalange,distal phalange
+Joints,synarthroses,lambdoid suture,saggital suture,squamosal suture,coronal suture
+Joints,types of synovial joints,plane,pivot,condyloid,saddle
+Joints,ligaments of scapula,coracoacromial,coracoclavicular,acromioclavicular,articular capsule
+Joints,ligaments of knee,anterior cruciate,posterior cruciate,medial collateral ,patellar
 Muscles 1,muscles of head,orbicularis oris,temporalis,occipitalis,masseter
 Muscles 1,abdomen,transversus abdominis,rectus abdominis,external oblique,internal oblique
 Muscles 1,back,trapezius,latissimus dorsi,rhomboid major,erector spinae
-Muscles 1,shoulder,teres minor,infraspinatus,subscapularis,supraspinatus
+Muscles 1,muscles of scapula,teres minor,infraspinatus,subscapularis,supraspinatus
 Muscles 2,upper arm,triceps brachii long head,brachialis,biceps brachii,triceps brachii medial head
 Muscles 2,forearm,flexor carpi radialis,palmaris longus,extensor carpi ulnaris,extensor digitorum
 Muscles 2,butt,gluteus maximus,gluteus medius,gluteus minimus,piriformis
-Muscles 2,femoral region,sartorius,pectineus,rectus femoris,vastus lateralis
+Muscles 2,femoral region,sartorius,pectineus,vastus intermedius,vastus lateralis
+Muscles 3,connective tissue,iliotibial band,thoracolumber aponeurosis,flexor retinaculum,epicranial aponeurosis
+Muscles 3,lower leg muscles,gastrocnemius,extensor digitorum longus,fibularis longus,soleus
+Muscles 3,pectoral girdle muscles,pectoralis minor,trapezius,serratus anterior,rhomboid minor
+Muscles 3,head muscles 2,frontalis,orbicularis oculi,masseter,temporalis
+advanced muscle,medial leg muscles,adductor longus,gracilis,vastus medialis,flexor digitorum longus
+advanced muscle,lateral leg muscles,vastus lateralis,tensor fascia latae,fibularis longus,gluteus medius
+advanced muscle,anterior leg muscles,tibialis anterior ,rectus femoris,sartorius,pectineus
+advanced muscle,posterior leg muscles,gastrocnemius,gluteus maximus,semitendinosus,biceps femoris
+joints and muscles,parts of a joint,tendon,ligament,articular cartilage,meniscus
+joints and muscles,chest and abdomen,serratus anterior,pectoralis major,external oblique,rectus abdominis
+joints and muscles,arm,deltoid,brachioradialis,flexor carpi ulnaris,triceps brachii lateral head
+joints and muscles,back,levator scapulae,supraspinatus,teres minor,latissimus dorsi
