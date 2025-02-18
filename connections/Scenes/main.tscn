@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnaipyhylk2eb"]
+[gd_scene load_steps=11 format=3 uid="uid://cnaipyhylk2eb"]
 
 [ext_resource type="Texture2D" uid="uid://ifxsmf0drvcq" path="res://Texture/New Piskel.png" id="1_b7y18"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jk0fl"]
@@ -9,6 +9,7 @@
 [ext_resource type="Theme" uid="uid://c30yekp5to2fj" path="res://Themes/Category.tres" id="6_8ylnv"]
 [ext_resource type="Theme" uid="uid://vc1wl542y1y0" path="res://Themes/Tile_Label.tres" id="6_ahu1c"]
 [ext_resource type="Script" path="res://Scripts/category_text.gd" id="7_rnp2j"]
+[ext_resource type="AudioStream" uid="uid://bwynhy0ft7nkl" path="res://SFX/success-fanfare-trumpets-6185.mp3" id="10_d4ilc"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -638,6 +639,9 @@ offset_top = 585.0
 offset_right = 126.0
 offset_bottom = 634.0
 text = "RETURN"
+
+[node name="Audio_Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_d4ilc")
 
 [connection signal="button_down" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_button_down"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Tile" to="CenterContainer/GridContainer/Tile" method="_on_pressed"]

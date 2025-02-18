@@ -5,6 +5,7 @@ var victory : bool
 var complete_theme = load("res://Themes/Tile_complete.tres")
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.new_list.shuffle()
@@ -25,6 +26,7 @@ func _check_selected():
 			else:
 				victory = true		
 	if victory == true:
+		$Audio_Victory.play()
 		score += 1
 		for n in $CenterContainer/GridContainer.get_children():
 			if n.button_pressed == true:
