@@ -5,19 +5,19 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ugtlw"]
 texture = ExtResource("2_cjmaj")
-modulate_color = Color(0.627451, 0.764706, 0.352941, 1)
+modulate_color = Color(0.275046, 0.793726, 0.784389, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_51txs"]
 texture = ExtResource("2_cjmaj")
-modulate_color = Color(0.627451, 0.764706, 0.352941, 1)
+modulate_color = Color(0.27451, 0.792157, 0.784314, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_luuag"]
 texture = ExtResource("2_cjmaj")
-modulate_color = Color(0.627451, 0.764706, 0.352941, 1)
+modulate_color = Color(0.27451, 0.792157, 0.784314, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ghum1"]
 texture = ExtResource("2_cjmaj")
-modulate_color = Color(0.627451, 0.764706, 0.352941, 1)
+modulate_color = Color(0.27451, 0.792157, 0.784314, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m36hy"]
 texture = ExtResource("2_cjmaj")

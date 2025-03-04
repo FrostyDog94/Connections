@@ -6,7 +6,7 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ype0y"]
 texture = ExtResource("2_m3jxv")
 region_rect = Rect2(0, 0, 50, 50)
-modulate_color = Color(0.937255, 0.937255, 0.901961, 1)
+modulate_color = Color(0.994943, 0.92825, 0.786365, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h4f1"]
 content_margin_left = 4.0
@@ -31,15 +31,15 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_syiyo"]
 texture = ExtResource("2_m3jxv")
-modulate_color = Color(0.937255, 0.937255, 0.901961, 1)
+modulate_color = Color(0.996078, 0.929412, 0.788235, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lc402"]
 texture = ExtResource("2_m3jxv")
-modulate_color = Color(0.937255, 0.937255, 0.901961, 1)
+modulate_color = Color(0.996078, 0.929412, 0.788235, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4g26u"]
 texture = ExtResource("2_m3jxv")
-modulate_color = Color(0.352941, 0.34902, 0.305882, 1)
+modulate_color = Color(0.437482, 0.33292, 0.0581788, 1)
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
@@ -59,7 +59,7 @@ Button/constants/align_to_largest_stylebox = 0
 Button/constants/h_separation = 4
 Button/constants/icon_max_width = 75
 Button/constants/outline_size = 0
-Button/font_sizes/font_size = 17
+Button/font_sizes/font_size = 18
 Button/fonts/font = ExtResource("1_uqo11")
 Button/styles/disabled = SubResource("StyleBoxTexture_ype0y")
 Button/styles/focus = SubResource("StyleBoxFlat_5h4f1")

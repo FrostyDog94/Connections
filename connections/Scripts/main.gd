@@ -5,7 +5,6 @@ var victory : bool
 var complete_theme = load("res://Themes/Tile_complete.tres")
 
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.new_list.shuffle()
@@ -14,9 +13,8 @@ func _ready() -> void:
 		n.get_child(0).text = Global.new_list[z].word.to_upper()
 		
 		z += 1
-		
-	
-		
+
+
 func _check_selected():
 	for item in Global.selected:
 			if item != Global.selected.front():
@@ -36,17 +34,19 @@ func _check_selected():
 		$Categories.get_child(score).text = Global.selected.front().to_upper()
 		_display_image()
 	print(victory)
-	
+
 	if score >= 3:
 		$UIText.text = "You win!"
-	
+
 	if Global.tries <= 0:
 		$UIText.text = "Next time!"
+		#_display_correct_answers()
 		for n in $CenterContainer/GridContainer.get_children():
 			n.disabled = true
+		$Clear.visible = false
+		$Restart.visible = true
+		
 			
-
-#Submit button
 func _on_submit_pressed() -> void:
 	if Global.buttons_pressed >= 4:
 		_check_selected()
@@ -63,6 +63,9 @@ func _on_clear_pressed() -> void:
 	#print(Global.selected)
 	for n in $CenterContainer/GridContainer.get_children():
 			n.button_pressed = false
+			
+func _restart_level():
+	Global.tries = 4
 
 
 func _on_back_pressed() -> void:
@@ -70,10 +73,25 @@ func _on_back_pressed() -> void:
 	
 
 func _display_image():
-	print("Cat = " + $Categories.get_child(score).text.to_lower())
-	$CorrectImage.visible = true
-	$CorrectImage.texture = load("res://Images/" + $Categories.get_child(score).text.to_lower() + ".png")
+	if ResourceLoader.exists("res://Images/" + $Categories.get_child(score).text.to_lower() + ".png"):
+		$CorrectImage.visible = true
+		$CorrectImage.texture = load("res://Images/" + $Categories.get_child(score).text.to_lower() + ".png")
 
 
 func _on_button_pressed() -> void:
 	$CorrectImage.visible = false
+
+
+func _on_restart_pressed() -> void:
+	get_tree().reload_current_scene()
+	_restart_level()
+	
+func _display_correct_answers():
+	var cat1 : Array
+	for n in $CenterContainer/GridContainer.get_children():
+		if cat1.is_empty():
+			$CenterContainer/GridContainer.move_child(n, 0)
+		elif n.new_tile.category == $CenterContainer/GridContainer.get_child(0).new_tile.category:
+			$CenterContainer/GridContainer.move_child(n, 0)
+			
+	
